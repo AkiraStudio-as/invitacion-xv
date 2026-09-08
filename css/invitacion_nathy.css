@@ -459,74 +459,309 @@
 
 @media screen and (max-width: 700px) {
 
+	/* PANTALLA */
+	body {
+		margin: 0;
+		padding: 0;
+		overflow-x: hidden;
+	}
+
 	/* CONTENEDOR PRINCIPAL */
 	.wrap {
 		width: 100%;
 		max-width: 100%;
+		margin: 0 auto;
 	}
 
-	/* COLUMNAS */
-	.columna_lft,
-	.columna_ctr,
-	.columna_rgt {
-		width: 100%;
-		float: none;
+	/* =========================================
+	   COLUMNAS
+	   ========================================= */
+
+	.columna_lft {
+		width: 20%;
+		float: left;
 		margin: 0;
 	}
 
-	/* IMÁGENES */
-	img {
-		max-width: 100%;
-		height: auto;
+	.columna_ctr {
+		width: 60%;
+		float: left;
+		margin: 0;
 	}
 
-	/* PORTADA */
+	.columna_rgt {
+		width: 20%;
+		float: left;
+		margin: 0;
+	}
+
+	/* =========================================
+	   PORTADA
+	   ========================================= */
+
 	.portada {
 		width: 100%;
-		max-width: 100%;
 		height: auto;
+		margin: 0 auto;
+		clear: both;
 	}
 
 	.portada_nathy {
-		max-width: 100%;
+		display: block;
+		width: 100%;
 		height: auto;
 	}
 
-	/* CONTENEDORES CENTRALES */
-	.audio,
-	.introduccion,
-	.calendario,
-	.dress_code,
-	.misa,
-	.recepcion,
-	.confirmacion {
-		width: 90%;
-		max-width: 524px;
-		box-sizing: border-box;
-		margin-left: auto;
-		margin-right: auto;
+	/* =========================================
+	   AUDIO
+	   ========================================= */
+
+	.audio {
+		width: 60%;
+		height: 60px;
+		margin: 10px auto 20px auto;
 	}
 
-	/* STICKERS */
+	.audio audio {
+		width: 100%;
+		max-width: 100%;
+	}
+
+	/* =========================================
+	   STICKERS
+	   ========================================= */
+
 	.stickers_left,
 	.stickers_right {
-		max-width: 100%;
+		width: 100%;
+		height: auto;
+		float: none;
+		margin: 0 auto;
+		display: block;
+	}
+
+	.espacios_libres_top {
+		width: 100%;
+		height: 30px;
+	}
+
+	.espacios_libres {
+		width: 100%;
+		height: 25px;
+	}
+
+	/* =========================================
+	   INTRODUCCIÓN
+	   ========================================= */
+
+	.introduccion {
+		width: 100%;
+		height: auto;
+		margin: 15px auto;
+	}
+
+	.texto {
+		font-size: 17px;
+		line-height: 1.25;
+	}
+
+	.texto span {
+		margin-bottom: 12px;
+	}
+
+	/* =========================================
+	   CALENDARIO
+	   ========================================= */
+
+	.calendario {
+		width: 100%;
+		height: auto;
+		margin: 15px auto;
+	}
+
+	.calendario img {
+		display: block;
+		width: 100%;
 		height: auto;
 	}
 
-	/* FOOTER */
-	.add_akira {
+	/* =========================================
+	   CUENTA REGRESIVA
+	   ========================================= */
+
+	.contador {
 		width: 100%;
+		margin: 25px auto;
+	}
+
+	.contador h2 {
+		font-size: 25px;
+		margin-bottom: 12px;
+	}
+
+	.contador-contenedor {
+		width: 100%;
+		gap: 3px;
+	}
+
+	.unidad span {
+		font-size: 21px;
+	}
+
+	.unidad p {
+		font-size: 7px;
+		margin-top: 3px;
+	}
+
+	.separador {
+		font-size: 18px;
+	}
+
+	#mensaje-final {
+		font-size: 30px;
+	}
+
+	/* =========================================
+	   MISA
+	   ========================================= */
+
+	.misa {
+		width: 100%;
+		height: auto;
+		margin: 30px auto;
+	}
+
+	.misa h2 {
+		font-size: 27px;
+		margin-bottom: 10px;
+	}
+
+	.hora-misa {
+		font-size: 20px;
+		margin-bottom: 15px;
+	}
+
+	.ubicacion {
+		width: 90%;
+		gap: 5px;
+	}
+
+	.boton-maps {
+		padding: 5px 10px;
+		font-size: 16px;
+	}
+
+	/* =========================================
+	   RECEPCIÓN
+	   ========================================= */
+
+	.recepcion {
+		width: 100%;
+		height: auto;
+		margin: 30px auto;
+	}
+
+	.recepcion h2 {
+		font-size: 27px;
+		margin-bottom: 10px;
+	}
+
+	.hora-recepcion {
+		font-size: 20px;
+		margin-bottom: 15px;
+	}
+
+	.ubicacion-recepcion {
+		width: 90%;
+		gap: 5px;
+	}
+
+	.boton-maps-recepcion {
+		padding: 5px 10px;
+		font-size: 16px;
+	}
+
+	/* =========================================
+	   DRESS CODE
+	   ========================================= */
+
+	.dress_code {
+		width: 100%;
+		height: auto;
+		margin: 25px auto;
+	}
+
+	.dress_code img {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+
+	/* =========================================
+	   CONFIRMACIÓN
+	   ========================================= */
+
+	.confirmacion {
+		width: 100%;
+		height: auto;
+		margin: 40px auto 30px auto;
+	}
+
+	.confirmacion h2 {
+		font-size: 23px;
+		margin-bottom: 15px;
+	}
+
+	.ubicacion-confirmacion {
+		width: 90%;
+		gap: 5px;
+	}
+
+	.boton-confirmacion {
+		padding: 5px 8px;
+		font-size: 13px;
+	}
+
+	/* =========================================
+	   FOOTER
+	   ========================================= */
+
+	.add_akira {
+		width: 96%;
+		height: auto;
+		min-height: 50px;
+		margin: 20px auto 10px auto;
 		box-sizing: border-box;
+		clear: both;
 	}
 
 	.akira {
+		width: 35%;
+		height: 50px;
+		float: left;
+	}
+
+	.akira img {
 		width: 100%;
-		float: none;
+		height: auto;
 	}
 
 	.redes {
-		width: 100%;
-		height: auto;
+		width: 65%;
+		height: 50px;
+		float: left;
+		display: flex;
+		align-items: center;
+	}
+
+	.redes a {
+		width: 33.33%;
+		height: 25px;
+		font-size: 9px;
+		letter-spacing: 0;
+	}
+
+	.redes a:hover {
+		letter-spacing: 0;
 	}
 }
