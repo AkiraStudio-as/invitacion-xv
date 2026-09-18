@@ -1096,6 +1096,7 @@ body {
 @media (max-width: 600px) {
 
 	.introduccion {
+		margin-top: 100px;
 		margin-bottom: 100px;
 	}
 
