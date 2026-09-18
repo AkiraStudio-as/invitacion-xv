@@ -702,12 +702,12 @@ body {
  
 	.sticker-01 { 
 		left: 0px;
-		bottom: 5px;
+		bottom: -5px;
 	} 
  
 	.sticker-02 { 
 		right: 0px; 
-		top: 10px;
+		top: -10px;
 	} 
  
  
