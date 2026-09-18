@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="es">
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Confirmación | AKIRA Studio</title>
+
+		<link href="css/reset.css" rel="stylesheet" type="text/css">
+		<link href="css/invitacion_nathy.css" rel="stylesheet" type="text/css">
+		<link href="mono_ak_favicon.png" rel="icon" type="image/png">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+		<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+		<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
+	</head>
+
+
+	<body id="background_big">
+
+		<div class="pagina-confirmacion">
+
+			<h1>CONFIRMA TU ASISTENCIA</h1>
+
+			<p class="mensaje-confirmacion">
+				Por favor, ingresa tu nombre para continuar.
+			</p>
+
+
+			<div class="datos-confirmacion">
+
+				<label for="nombre">NOMBRE</label>
+
+				<input
+					type="text"
+					id="nombre"
+					placeholder="Nombre completo"
+					autocomplete="off"
+				>
+
+
+				<label for="asistencia">¿ASISTIRÁS?</label>
+
+				<select id="asistencia">
+
+					<option value="">Selecciona una opción</option>
+
+					<option value="Sí">
+						Sí, asistiré
+					</option>
+
+					<option value="No">
+						No podré asistir
+					</option>
+
+				</select>
+
+			</div>
+
+
+			<div id="seccionBoletos" class="seccion-boletos">
+
+				<h2>BOLETOS DISPONIBLES</h2>
+
+				<p id="mensajeBoletos">
+					Selecciona los boletos que utilizarás.
+				</p>
+
+				<div id="boletos" class="boletos">
+				</div>
+
+				<p id="contadorBoletos" class="contador-boletos">
+					0 boletos seleccionados
+				</p>
+
+			</div>
+
+
+			<button type="button" id="enviarConfirmacion" class="boton-enviar">
+				CONFIRMAR ASISTENCIA
+			</button>
+
+
+			<p id="mensajeResultado" class="mensaje-resultado"></p>
+
+		</div>
+
+
+		<script src="js/confirmacion.js"></script>
+
+	</body>
+
+</html>
