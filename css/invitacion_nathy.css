@@ -1,0 +1,1126 @@
+@charset "utf-8"; 
+ 
+/* ===================================== 
+   RESET GENERAL 
+===================================== */ 
+ 
+html, 
+body { 
+	margin: 0; 
+	padding: 0; 
+	width: 100%; 
+} 
+ 
+* { 
+	box-sizing: border-box; 
+} 
+ 
+ 
+/* ===================================== 
+   FONDO 
+===================================== */ 
+ 
+#background_big { 
+	background-color: #D5BBF6; 
+	overflow-x: hidden; 
+	width: 100%; 
+	min-height: 100vh; 
+} 
+ 
+ 
+/* ===================================== 
+   CONTENEDOR PRINCIPAL 
+===================================== */ 
+ 
+.wrap { 
+	width: 100%; 
+	max-width: 1100px; 
+	margin: 0 auto; 
+} 
+ 
+ 
+/* ===================================== 
+   PORTADA 
+===================================== */ 
+ 
+.portada { 
+	width: 100%; 
+	max-width: 950px; 
+	margin: 0 auto; 
+	padding: 0; 
+} 
+ 
+.portada_nathy { 
+	display: block; 
+	width: 100%; 
+	height: auto; 
+	margin: 0 auto; 
+} 
+ 
+ 
+/* ===================================== 
+   AUDIO 
+===================================== */ 
+ 
+.audio { 
+	width: 100%; 
+	max-width: 524px; 
+	margin: 20px auto 30px; 
+	padding: 0 10px; 
+} 
+ 
+.audio audio { 
+	display: block; 
+	width: 100%; 
+} 
+ 
+ 
+/* ===================================== 
+   ZONA DE CONTENIDO 
+===================================== */ 
+ 
+.zona-contenido { 
+	position: relative; 
+	width: 100%; 
+} 
+ 
+ 
+/* ===================================== 
+   CONTENIDO PRINCIPAL 
+===================================== */ 
+ 
+.invitacion { 
+	position: relative; 
+	z-index: 2; 
+ 
+	width: min(680px, calc(100% - 40px)); 
+	margin: 0 auto; 
+	padding: 0; 
+} 
+ 
+ 
+/* ===================================== 
+   STICKERS 
+===================================== */ 
+ 
+.decoracion { 
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+ 
+	width: 100%; 
+	height: 100%; 
+ 
+	pointer-events: none; 
+	z-index: 1; 
+} 
+ 
+.sticker { 
+	position: absolute; 
+ 
+	width: 110px; 
+	height: 110px; 
+ 
+	object-fit: contain; 
+} 
+ 
+ 
+/* ===================================== 
+   STICKERS IZQUIERDA 
+===================================== */ 
+ 
+.sticker-01 { 
+	left: 2%; 
+	top: 5%; 
+} 
+ 
+.sticker-03 { 
+	left: 2%; 
+	top: 20%; 
+} 
+ 
+.sticker-05 { 
+	left: 2%; 
+	top: 35%; 
+} 
+ 
+.sticker-06 { 
+	left: 2%; 
+	top: 50%; 
+} 
+ 
+.sticker-09 { 
+	left: 2%; 
+	top: 67%; 
+} 
+ 
+.sticker-12 { 
+	left: 2%; 
+	top: 84%; 
+} 
+ 
+ 
+/* ===================================== 
+   STICKERS DERECHA 
+===================================== */ 
+ 
+.sticker-02 { 
+	right: 2%; 
+	top: 10%; 
+} 
+ 
+.sticker-04 { 
+	right: 2%; 
+	top: 25%; 
+} 
+ 
+.sticker-07 { 
+	right: 2%; 
+	top: 40%; 
+} 
+ 
+.sticker-08 { 
+	right: 2%; 
+	top: 55%; 
+} 
+ 
+.sticker-10 { 
+	right: 2%; 
+	top: 72%; 
+} 
+ 
+.sticker-11 { 
+	right: 2%; 
+	top: 89%; 
+} 
+ 
+ 
+/* ===================================== 
+   INTRODUCCIÓN 
+===================================== */ 
+ 
+.introduccion { 
+	width: 100%; 
+	margin: 0 auto 45px; 
+	text-align: center; 
+} 
+ 
+.texto { 
+	margin: 0; 
+ 
+	color: #390757; 
+	font-family: "Great Vibes", cursive; 
+	font-size: clamp(28px, 4vw, 40px); 
+	line-height: 1.45; 
+} 
+ 
+.texto span { 
+	display: block; 
+	margin-bottom: 18px; 
+} 
+ 
+.texto span:last-child { 
+	margin-bottom: 0; 
+} 
+ 
+ 
+/* ===================================== 
+   CALENDARIO 
+===================================== */ 
+ 
+.calendario { 
+	width: 100%; 
+	margin: 0 auto 45px; 
+	text-align: center; 
+} 
+ 
+.imagen-calendario { 
+	display: block; 
+	width: 100%; 
+	max-width: 620px; 
+	height: auto; 
+	margin: 0 auto; 
+} 
+ 
+ 
+/* ===================================== 
+   CONTADOR 
+===================================== */ 
+ 
+.contador { 
+	width: 100%; 
+	margin: 0 auto 60px; 
+	text-align: center; 
+} 
+ 
+.contador h2 { 
+	margin: 0 0 25px; 
+ 
+	color: #390757; 
+	font-family: "DM Serif Display", serif; 
+	font-size: clamp(30px, 4vw, 42px); 
+	font-weight: normal; 
+} 
+ 
+.contador-contenedor { 
+	display: flex; 
+	align-items: flex-start; 
+	justify-content: center; 
+ 
+	width: 100%; 
+	gap: 8px; 
+} 
+ 
+.unidad { 
+	display: flex; 
+	flex-direction: column; 
+	align-items: center; 
+	justify-content: center; 
+} 
+ 
+.texto-contador { 
+	margin: 0; 
+ 
+	color: #390757; 
+	font-family: "DM Serif Display", serif; 
+} 
+ 
+.unidad span { 
+	font-size: clamp(30px, 5vw, 50px); 
+	line-height: 1; 
+} 
+ 
+.unidad p { 
+	margin-top: 8px; 
+	font-size: clamp(11px, 1.5vw, 16px); 
+	letter-spacing: 1px; 
+} 
+ 
+.separador { 
+	color: #390757; 
+	font-family: "DM Serif Display", serif; 
+	font-size: clamp(28px, 4vw, 42px); 
+	line-height: 1; 
+} 
+ 
+ 
+/* ===================================== 
+   MENSAJE FINAL 
+===================================== */ 
+ 
+#mensaje-final { 
+	display: none; 
+ 
+	margin-top: 20px; 
+ 
+	color: #390757; 
+	font-family: "Great Vibes", cursive; 
+	font-size: 50px; 
+	font-weight: 400; 
+	font-style: normal; 
+} 
+ 
+ 
+/* ===================================== 
+   MISA 
+===================================== */ 
+ 
+.misa { 
+	width: 100%; 
+	margin: 0 auto 60px; 
+	text-align: center; 
+} 
+ 
+.misa h2 { 
+	margin: 0 0 15px; 
+ 
+	color: #390757; 
+	font-family: "DM Serif Display", serif; 
+	font-size: clamp(30px, 4vw, 42px); 
+	font-weight: normal; 
+} 
+ 
+.hora-misa { 
+	margin: 0 0 20px; 
+ 
+	color: #390757; 
+	font-family: "DM Serif Display", serif; 
+	font-size: 32px; 
+} 
+ 
+.ubicacion { 
+	display: flex; 
+	align-items: center; 
+	justify-content: center; 
+ 
+	width: 100%; 
+	gap: 15px; 
+} 
+ 
+.linea { 
+	display: block; 
+ 
+	width: 100%; 
+	max-width: 180px; 
+	height: 1px; 
+ 
+	background-color: #603883; 
+} 
+ 
+ 
+/* BOTÓN ORIGINAL */ 
+ 
+.boton-maps { 
+	display: inline-block; 
+ 
+	padding: 6px 10px; 
+ 
+	border: 1px solid #603883; 
+	border-radius: 8px; 
+ 
+	color: aliceblue; 
+	background-color: #603883; 
+ 
+	font-family: "DM Serif Display", serif; 
+	font-size: 18px; 
+ 
+	text-decoration: none; 
+	white-space: nowrap; 
+} 
+ 
+ 
+/* ===================================== 
+   RECEPCIÓN 
+===================================== */ 
+ 
+.recepcion { 
+	width: 100%; 
+	margin: 0 auto 60px; 
+	text-align: center; 
+} 
+ 
+.recepcion h2 { 
+	margin: 0 0 15px; 
+ 
+	color: #390757; 
+	font-family: "DM Serif Display", serif; 
+	font-size: clamp(30px, 4vw, 42px); 
+	font-weight: normal; 
+} 
+ 
+.hora-recepcion { 
+	margin: 0 0 20px; 
+ 
+	color: #390757; 
+	font-family: "DM Serif Display", serif; 
+	font-size: 32px; 
+} 
+ 
+ 
+.ubicacion-recepcion { 
+	display: flex; 
+	align-items: center; 
+	justify-content: center; 
+ 
+	width: 100%; 
+	gap: 15px; 
+} 
+ 
+.linea-recepcion { 
+	display: block; 
+ 
+	width: 100%; 
+	max-width: 180px; 
+	height: 1px; 
+ 
+	background-color: #603883; 
+} 
+ 
+ 
+/* BOTÓN ORIGINAL */ 
+ 
+.boton-maps-recepcion { 
+	display: inline-block; 
+ 
+	padding: 6px 10px; 
+ 
+	border: 1px solid #603883; 
+	border-radius: 8px; 
+ 
+	color: aliceblue; 
+	background-color: #603883; 
+ 
+	font-family: "DM Serif Display", serif; 
+	font-size: 18px; 
+ 
+	text-decoration: none; 
+	white-space: nowrap; 
+} 
+ 
+ 
+/* ===================================== 
+   DRESS CODE 
+===================================== */ 
+ 
+.dress_code { 
+	width: 100%; 
+	margin: 0 auto 60px; 
+	text-align: center; 
+} 
+ 
+.imagen-dress-code { 
+	display: block; 
+ 
+	width: 100%; 
+	max-width: 620px; 
+	height: auto; 
+ 
+	margin: 0 auto; 
+} 
+ 
+ 
+/* ===================================== 
+   CONFIRMACIÓN 
+===================================== */ 
+ 
+.confirmacion { 
+	width: 270px; 
+	text-align: center; 
+	margin-left: auto; 
+	margin-right: auto; 
+	margin-top: 80px; 
+	margin-bottom: 40px; 
+} 
+ 
+.confirmacion h2 { 
+	margin: 0 0 25px 0; 
+	font-size: 30px; 
+	font-weight: normal; 
+	font-family: "DM Serif Display", serif; 
+	color: #390757; 
+} 
+ 
+.ubicacion-confirmacion { 
+	width: 250px; 
+	margin: 0 auto; 
+	display: flex; 
+	align-items: center; 
+	justify-content: center; 
+	gap: 5px; 
+} 
+ 
+.linea-confirmacion { 
+	height: 2.5px; 
+	flex: 1; 
+	min-width: 10px; 
+	background-color: #603883; 
+} 
+ 
+.boton-confirmacion { 
+	padding: 6px 10px; 
+	border: 1px solid #603883; 
+	border-radius: 8px; 
+	text-decoration: none; 
+	color: aliceblue; 
+	font-size: 18px; 
+	white-space: nowrap; 
+	background-color: #603883; 
+	font-family: "DM Serif Display", serif; 
+} 
+ 
+ 
+/* ===================================== 
+   FOOTER 
+===================================== */ 
+ 
+.add_akira { 
+	width: calc(100% - 80px); 
+	max-width: 1024px; 
+ 
+	min-height: 80px; 
+ 
+	margin: 0 auto; 
+ 
+	border-top: 1px solid #603883; 
+ 
+	display: flex; 
+	align-items: center; 
+	justify-content: center; 
+ 
+	gap: 100px; 
+} 
+ 
+ 
+/* ===================================== 
+   REDES 
+===================================== */ 
+ 
+.redes { 
+	display: flex; 
+	align-items: center; 
+	justify-content: center; 
+	flex-wrap: wrap; 
+ 
+	gap: 20px; 
+} 
+ 
+.redes a { 
+	color: #603883; 
+ 
+	font-family: "DM Serif Display", serif; 
+	font-size: 15px; 
+ 
+	text-decoration: none; 
+ 
+	transition: 0.3s ease; 
+} 
+ 
+.redes a:hover { 
+	color: #4C0E16; 
+} 
+ 
+ 
+/* ===================================== 
+   LOGO AKIRA 
+===================================== */ 
+ 
+/* Se usa el selector del contenedor 
+   para evitar conflicto con la imagen */ 
+ 
+.add_akira section.akira { 
+	display: flex; 
+	align-items: center; 
+	justify-content: center; 
+ 
+	width: 170px; 
+	flex-shrink: 0; 
+} 
+ 
+.add_akira img.akira { 
+	display: block; 
+ 
+	width: 170px; 
+	height: auto; 
+} 
+ 
+ 
+/* ===================================== 
+   TABLET 
+===================================== */ 
+ 
+@media (max-width: 900px) { 
+ 
+	.invitacion { 
+		width: min(680px, calc(100% - 180px)); 
+	} 
+ 
+	.sticker { 
+		width: 95px; 
+		height: 95px; 
+	} 
+ 
+	.sticker-01, 
+	.sticker-03, 
+	.sticker-05, 
+	.sticker-06, 
+	.sticker-09, 
+	.sticker-12 { 
+		left: 1%; 
+	} 
+ 
+	.sticker-02, 
+	.sticker-04, 
+	.sticker-07, 
+	.sticker-08, 
+	.sticker-10, 
+	.sticker-11 { 
+		right: 1%; 
+	} 
+ 
+	.texto { 
+		font-size: clamp(27px, 4vw, 36px); 
+	} 
+ 
+	.contador-contenedor { 
+		gap: 5px; 
+	} 
+ 
+	.add_akira { 
+		gap: 70px; 
+	} 
+} 
+ 
+ 
+/* ===================================== 
+   CELULAR 
+===================================== */ 
+ 
+@media (max-width: 600px) { 
+ 
+	.portada { 
+		width: 100%; 
+	} 
+ 
+	.audio { 
+		width: calc(100% - 30px); 
+		margin: 15px auto 30px; 
+		padding: 0; 
+	} 
+ 
+	.invitacion { 
+		width: calc(100% - 30px); 
+	} 
+ 
+ 
+	/* STICKERS */ 
+ 
+	.sticker { 
+		width: 75px; 
+		height: 75px; 
+	} 
+ 
+	.sticker-01, 
+	.sticker-03, 
+	.sticker-05, 
+	.sticker-06, 
+	.sticker-09, 
+	.sticker-12 { 
+		left: -2px; 
+	} 
+ 
+	.sticker-02, 
+	.sticker-04, 
+	.sticker-07, 
+	.sticker-08, 
+	.sticker-10, 
+	.sticker-11 { 
+		right: -2px; 
+	} 
+ 
+ 
+	/* AJUSTE DE LOS DOS PRIMEROS STICKERS */ 
+ 
+	.sticker-01 { 
+		left: 0px; 
+		bottom: -5px
+	} 
+ 
+	.sticker-02 { 
+		right: 0px;
+		top: -10px
+	} 
+ 
+ 
+	/* INTRODUCCIÓN */ 
+ 
+	.introduccion { 
+		margin-bottom: 35px; 
+	} 
+ 
+	.texto { 
+		font-size: 28px; 
+		line-height: 1.35; 
+	} 
+ 
+	.texto span { 
+		margin-bottom: 15px; 
+	} 
+ 
+ 
+	/* CALENDARIO */ 
+ 
+	.calendario { 
+		margin-bottom: 35px; 
+	} 
+ 
+ 
+	/* CONTADOR */ 
+ 
+	.contador { 
+		margin-bottom: 50px; 
+	} 
+ 
+	.contador h2 { 
+		font-size: 32px; 
+		margin-bottom: 20px; 
+	} 
+ 
+	.contador-contenedor { 
+		gap: 3px; 
+	} 
+ 
+	.unidad span { 
+		font-size: 27px; 
+	} 
+ 
+	.unidad p { 
+		font-size: 9px; 
+		letter-spacing: 0.5px; 
+	} 
+ 
+	.separador { 
+		font-size: 25px; 
+	} 
+ 
+	#mensaje-final { 
+		font-size: 40px; 
+	} 
+ 
+ 
+	/* MISA */ 
+ 
+	.misa { 
+		margin-bottom: 50px; 
+	} 
+ 
+	.misa h2 { 
+		font-size: 32px; 
+	} 
+ 
+	.hora-misa { 
+		margin: 0 0 20px; 
+ 
+		color: #390757; 
+		font-family: "DM Serif Display", serif; 
+		font-size: 32px; 
+	} 
+ 
+ 
+	/* RECEPCIÓN */ 
+ 
+	.recepcion { 
+		margin-bottom: 50px; 
+	} 
+ 
+	.recepcion h2 { 
+		font-size: 32px; 
+	} 
+ 
+	.hora-recepcion { 
+		margin: 0 0 20px; 
+ 
+		color: #390757; 
+		font-family: "DM Serif Display", serif; 
+		font-size: 32px; 
+	} 
+ 
+ 
+	/* UBICACIONES */ 
+ 
+	.ubicacion, 
+	.ubicacion-recepcion, 
+	.ubicacion-confirmacion { 
+		gap: 5px; 
+	} 
+ 
+	.linea, 
+	.linea-recepcion { 
+		max-width: 75px; 
+	} 
+ 
+ 
+	/* CONFIRMACIÓN */ 
+ 
+	.confirmacion { 
+		width: 270px; 
+		margin-left: auto; 
+		margin-right: auto; 
+		margin-top: 60px; 
+		margin-bottom: 55px; 
+	} 
+ 
+	.confirmacion h2 { 
+		font-size: 28px; 
+		margin-bottom: 25px; 
+	} 
+ 
+	.ubicacion-confirmacion { 
+		width: 250px; 
+		gap: 5px; 
+	} 
+ 
+	.linea-confirmacion { 
+		height: 2.5px; 
+		min-width: 10px; 
+	} 
+ 
+	.boton-confirmacion { 
+		padding: 6px 10px; 
+		font-size: 18px; 
+	} 
+ 
+ 
+	/* DRESS CODE */ 
+ 
+	.dress_code { 
+		margin-bottom: 50px; 
+	} 
+ 
+ 
+	/* FOOTER */ 
+ 
+	.add_akira { 
+		width: calc(100% - 50px); 
+ 
+		min-height: auto; 
+ 
+		padding: 20px 10px; 
+ 
+		flex-direction: row; 
+		justify-content: center; 
+ 
+		gap: 35px; 
+ 
+		text-align: center; 
+	} 
+ 
+	.redes { 
+		max-width: 170px; 
+		gap: 10px 15px; 
+	} 
+ 
+	.redes a { 
+		font-size: 13px; 
+	} 
+ 
+	.add_akira section.akira { 
+		width: 120px; 
+	} 
+ 
+	.add_akira img.akira { 
+		width: 120px; 
+	} 
+}
+
+/* =====================================
+   PAGINA DE CONFIRMACION
+===================================== */
+
+.pagina-confirmacion{
+	width: 270px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 80px;
+	padding-bottom: 60px;
+	text-align: center;
+}
+
+
+.pagina-confirmacion h1{
+	margin: 0 0 15px 0;
+	font-size: 30px;
+	font-weight: normal;
+	font-family: "DM Serif Display", serif;
+	color: #390757;
+}
+
+
+.mensaje-confirmacion{
+	margin: 0 auto 35px auto;
+	font-family: "Great Vibes", cursive;
+	font-size: 20px;
+	line-height: 1.3;
+	color: #3D054F;
+}
+
+
+.datos-confirmacion{
+	width: 250px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+
+
+.datos-confirmacion label{
+	display: block;
+	margin-bottom: 7px;
+	font-family: "DM Serif Display", serif;
+	font-size: 15px;
+	color: #390757;
+}
+
+
+.datos-confirmacion input,
+.datos-confirmacion select{
+	width: 100%;
+	height: 38px;
+	margin-bottom: 22px;
+	padding: 6px 10px;
+	box-sizing: border-box;
+	border: 1px solid #603883;
+	border-radius: 8px;
+	background-color: rgba(255,255,255,0.65);
+	color: #390757;
+	font-family: "DM Serif Display", serif;
+	font-size: 15px;
+	outline: none;
+}
+
+
+.datos-confirmacion input:focus,
+.datos-confirmacion select:focus{
+	border-color: #390757;
+}
+
+
+.seccion-boletos{
+	display: none;
+	width: 250px;
+	margin: 20px auto 30px auto;
+	text-align: center;
+}
+
+
+.seccion-boletos h2{
+	margin: 0 0 10px 0;
+	font-family: "DM Serif Display", serif;
+	font-size: 22px;
+	font-weight: normal;
+	color: #390757;
+}
+
+
+#mensajeBoletos{
+	margin: 0 auto 20px auto;
+	font-family: "Great Vibes", cursive;
+	font-size: 18px;
+	color: #3D054F;
+}
+
+
+.boletos{
+	width: 230px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 12px;
+}
+
+
+.boleto{
+	width: 32px;
+	height: 32px;
+	padding: 0;
+	border: 2px solid #603883;
+	border-radius: 50%;
+	background-color: white;
+	cursor: pointer;
+	box-sizing: border-box;
+}
+
+
+.boleto.seleccionado{
+	background-color: #603883;
+}
+
+
+.contador-boletos{
+	margin: 18px 0 0 0;
+	font-family: "DM Serif Display", serif;
+	font-size: 15px;
+	color: #390757;
+}
+
+
+.boton-enviar{
+	display: block;
+	margin: 25px auto 0 auto;
+	padding: 6px 10px;
+	border: 1px solid #603883;
+	border-radius: 8px;
+	text-decoration: none;
+	color: aliceblue;
+	font-size: 18px;
+	white-space: nowrap;
+	background-color: #603883;
+	font-family: "DM Serif Display", serif;
+	cursor: pointer;
+}
+
+
+.boton-enviar:hover{
+	background-color: #4C0E16;
+	border-color: #4C0E16;
+}
+
+
+.mensaje-resultado{
+	margin: 25px auto 0 auto;
+	font-family: "Great Vibes", cursive;
+	font-size: 21px;
+	line-height: 1.3;
+	color: #3D054F;
+}
+
+
+/* =====================================
+   MÁS ESPACIO VERTICAL EN TODA LA PÁGINA
+===================================== */
+
+.introduccion {
+	margin-bottom: 80px;
+}
+
+.calendario {
+	margin-bottom: 80px;
+}
+
+.contador {
+	margin-bottom: 80px;
+}
+
+.misa {
+	margin-bottom: 80px;
+}
+
+.recepcion {
+	margin-bottom: 80px;
+}
+
+.dress_code {
+	margin-bottom: 80px;
+}
+
+.confirmacion {
+	margin-bottom: 80px;
+}
+
+
+/* =====================================
+   MÁS ESPACIO VERTICAL EN CELULAR
+===================================== */
+
+@media (max-width: 600px) {
+
+	.introduccion {
+		margin-bottom: 65px;
+	}
+
+	.calendario {
+		margin-bottom: 65px;
+	}
+
+	.contador {
+		margin-bottom: 65px;
+	}
+
+	.misa {
+		margin-bottom: 65px;
+	}
+
+	.recepcion {
+		margin-bottom: 65px;
+	}
+
+	.dress_code {
+		margin-bottom: 65px;
+	}
+
+	.confirmacion {
+		margin-bottom: 65px;
+	}
+
+}
