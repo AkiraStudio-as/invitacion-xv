@@ -701,11 +701,11 @@ body {
 	/* AJUSTE DE LOS DOS PRIMEROS STICKERS */ 
  
 	.sticker-01 { 
-		left: -10px; 
+		left: 0px; 
 	} 
  
 	.sticker-02 { 
-		right: -10px; 
+		right: 0px; 
 	} 
  
  
