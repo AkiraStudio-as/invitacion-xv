@@ -1096,31 +1096,31 @@ body {
 @media (max-width: 600px) {
 
 	.introduccion {
-		margin-bottom: 75px;
+		margin-bottom: 100px;
 	}
 
 	.calendario {
-		margin-bottom: 75px;
+		margin-bottom: 100px;
 	}
 
 	.contador {
-		margin-bottom: 75px;
+		margin-bottom: 100px;
 	}
 
 	.misa {
-		margin-bottom: 75px;
+		margin-bottom: 100px;
 	}
 
 	.recepcion {
-		margin-bottom: 75px;
+		margin-bottom: 100px;
 	}
 
 	.dress_code {
-		margin-bottom: 75px;
+		margin-bottom: 100px;
 	}
 
 	.confirmacion {
-		margin-bottom: 75px;
+		margin-bottom: 100px;
 	}
 
 }
