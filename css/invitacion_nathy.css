@@ -1059,7 +1059,9 @@ body {
 /* =====================================
    MÁS ESPACIO VERTICAL EN TODA LA PÁGINA
 ===================================== */
-
+.portada {
+	margin-top: 100px;
+}
 .introduccion {
 	margin-bottom: 100px;
 }
