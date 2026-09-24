@@ -702,12 +702,12 @@ body {
  
 	.sticker-01 { 
 		left: 0px; 
-		bottom: -5px
+		bottom: 20px
 	} 
  
 	.sticker-02 { 
 		right: 0px;
-		top: -10px
+		bottom: 25px
 	} 
  
  
@@ -1098,7 +1098,7 @@ body {
 @media (max-width: 600px) {
 
 	.introduccion {
-		margin-top: 200px;
+		margin-top: 100px;
 		margin-bottom: 100px;
 	}
 
